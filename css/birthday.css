@@ -1,0 +1,636 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #ff69b4; /* Soft pink for birthday vibes */
+    padding: 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promo-banner h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Left Section Styling */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.store-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: #3c3cac;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.location-link:hover {
+  background-color: #3c3cac;
+  color: white;
+}
+
+.location-dropdown {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+}
+
+/* Center Section Styling */
+.navbar-center {
+  text-align: center;
+}
+
+.website-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3c3cac;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.website-name:hover {
+  color: #0054a6;
+}
+
+/* Right Section Styling */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Search Bar Styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 300px;
+}
+
+.search-container input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px 0 40px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.search-container input:focus {
+  border: 1px solid #3c3cac;
+  background-color: #fff;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.search-container input:focus + .search-icon {
+  color: #3c3cac;
+}
+
+/* Icons Styling */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #3c3cac;
+  font-size: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icons a:hover {
+  background-color: #3c3cac;
+  color: white;
+}
+
+  
+  /* Gift Recommendations Section */
+  .gift-recommendations {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .gift-recommendations h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .gift-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .gift-card {
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 700px;
+    text-align: center;
+  }
+  .gift-card1{
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 850px;
+    text-align: center;
+  }
+  .gift-card2{
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 950px;
+    text-align: center;
+  }
+  .gift-card img, .gift-card1 img, .gift-card2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .gift-card h3 , .gift-card1 h3, .gift-card2 h3{
+    margin-top: 15px;
+    font-size: 24px;
+    color: #ff69b4;
+  }
+  
+  .gift-card p , .gift-card1 p, .gift-card2 p{
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Gift Quiz Section */
+  .gift-quiz {
+    text-align: center;
+    background-color: #ff69b4;
+    padding: 40px 20px;
+    color: #fff;
+  }
+  
+  .gift-quiz button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gift-quiz button:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #ff69b4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-links a:hover {
+    color: #ffcc00;
+  }
+  
+  .social-icons a {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+  }
+  
+  .newsletter-form {
+    margin-top: 20px;
+  }
+  
+  .newsletter-form input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 250px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #e6b800;
+  }
+  /* Responsive Design */
+@media screen and (max-width: 768px) {
+ /* Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .navbar-left, .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .navbar-center {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .website-name {
+    font-size: 24px;
+  }
+
+  /* Search Bar */
+  .search-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-container input {
+    width: 85%;
+    height: 35px;
+  }
+
+  /* Icons */
+  .icons {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .icons a {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    margin: 0 5px;
+  }
+}
+
+  /* Gift Recommendations */
+  .gift-recommendations {
+      padding: 20px 10px;
+  }
+
+  .gift-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .gift-card, .gift-card1, .gift-card2 {
+      width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .gift-card img, .gift-card1 img, .gift-card2 img {
+      width: 100%;
+      height: auto;
+  }
+}
+/* Mobile View */
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 15px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin: 0 15px;
+  }
+
+  .newsletter-form input, .newsletter-form button {
+    width: 80%;
+    max-width: 90%;
+    margin: 0 auto 10px;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+  footer {
+    padding: 40px 20px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    margin: 0 20px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+    margin: 0 20px;
+  }
+
+  .newsletter-form input, .newsletter-form button {
+    width: 60%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Header */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-center .website-name {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  /* Gift Recommendations */
+  .gift-recommendations {
+      padding: 15px 10px;
+  }
+
+  .gift-cards {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .gift-card, .gift-card1, .gift-card2 {
+      width: 80%;
+      height: auto;
+      margin-bottom: 15px;
+  }
+
+  /* Gift Quiz */
+  .gift-quiz button {
+      font-size: 16px;
+      padding: 12px 20px;
+  }
+
+  /* Footer */
+  footer {
+      padding: 15px 5px;
+  }
+
+  .footer-links a {
+      font-size: 14px;
+      margin: 0 10px;
+  }
+
+  .social-icons a {
+      font-size: 18px;
+      margin: 0 10px;
+  }
+
+  .newsletter-form input {
+      width: 100%;
+  }
+
+  .newsletter-form button {
+      width: 100%;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('/assets/pexels-iamabdullahsheik-10795207.jpg') no-repeat center center/cover; /* Background image */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+  opacity: 6  ;
+}
+
+/* Background Overlay */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Darker background overlay for text readability */
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Animations */
+.hero-section h1 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 2;
+color: white;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+  .hero-section {
+    padding: 50px 30px;
+  }
+
+  .hero-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+  }
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* General Button Styles */
+.add-to-cart {
+  display: inline-block;
+  background: linear-gradient(145deg, #ff69b4, #ff1493); /* Gradient background */
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  width: 100%;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Hover Effects */
+.add-to-cart:hover {
+  background: linear-gradient(145deg, #ff1493, #ff69b4); /* Reverse gradient on hover */
+  transform: translateY(-4px); /* Slight elevation effect */
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow effect on hover */
+}
+
+/* Focus Effects */
+.add-to-cart:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 105, 180, 0.5); /* Glow effect on focus */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .add-to-cart {
+    font-size: 14px;
+    padding: 10px 20px;  /* Smaller padding on mobile */
+    width: auto; /* Adjust width to fit content */
+  }
+
+  /* Button hover effect */
+  .add-to-cart:hover {
+    transform: scale(1.05);  /* Slight scaling effect on hover */
+  }
+}
+
+/* Desktop Responsive */
+@media (min-width: 769px) {
+  .add-to-cart {
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 16px;  /* Larger font size for desktop */
+  }
+}
