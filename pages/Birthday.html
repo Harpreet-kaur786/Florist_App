@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+
+  <!--Page Information-->
+  <meta charset="UTF-8">
+  <meta name="description" content="An app to keep a list of all your favourites artist and song names." >
+  <meta name="author" content="Harpreet Kaur">
+
+  <!--Locks the size of the page on the devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Title of the page-->
+  <title>Florist Blossom </title>
+
+
+  <!--Link the Web App Manifest-->
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" sizes="196x196" href="/icons/favicon-196.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta name="msapplication-square70x70logo" content="/icons/mstile-icon-128.png">
+  
+  <meta name="msapplication-square150x150logo" content="/icons/mstile-icon-270.png">
+  <meta name="msapplication-square310x310logo" content="/icons/mstile-icon-558.png">
+  <meta name="msapplication-wide310x150logo" content="/icons/mstile-icon-558-270.png">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-2732.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2732-2048.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2388.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2388-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1536-2048.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-1536.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1488-2266.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2266-1488.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1640-2360.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2360-1640.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2224.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2224-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1620-2160.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2160-1620.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1290-2796.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2796-1290.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1179-2556.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2556-1179.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1284-2778.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2778-1284.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1170-2532.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2532-1170.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1125-2436.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2436-1125.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2688.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2688-1242.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-828-1792.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1792-828.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2208.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2208-1242.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-750-1334.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1334-750.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-640-1136.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1136-640.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-app-title" content="Music app">
+  <meta name="theme-color" content="#1db954" >
+  <link rel="stylesheet" href="/css/birthday.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+      <!-- Header Section -->
+      <header>
+        <div class="promo-banner">
+          <h2>🎉 Special Offer: 20% OFF Your First Birthday Gift Order! 🎉</h2>
+        </div>
+        <nav class="navbar">
+          <!-- Left Section -->
+          <div class="navbar-left">
+            <div class="store-location">
+              <a href="https://www.google.com/maps" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+              </a>
+              <select class="location-dropdown" onchange="redirectToMap(this)">
+                <option value="">Pick Up In Store Location</option>
+                <option value="Birchwood Mall">Birchwood Mall</option>
+                <option value="Downtown Store">Downtown Store</option>
+                <option value="Uptown Center">Uptown Center</option>
+              </select>
+            </div>
+          </div>
+  
+          <!-- Center Section -->
+          <div class="navbar-center">
+            <a href="/index.html" class="website-name">Florist Blossom</a>
+          </div>
+  
+          <!-- Right Section -->
+          <div class="navbar-right">
+            <div class="search-container">
+              <input type="text" placeholder="Search birthday gifts..." />
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <div class="icons">
+              <a href="/pages/login.html" class="account-icon">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <a href="/pages/order.html" class="bag-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1>Happy Birthday! 🎂</h1>
+        <p>Find the perfect gift for your loved ones and make their birthday even more special with our curated collection of birthday gifts 🎉</p>
+      </section>
+  
+     <!-- Gift Recommendations -->
+<section class="gift-recommendations">
+    <h2>Our Top Birthday Picks 🎁</h2>
+    <div class="gift-cards">
+      <!-- Card 1 -->
+      <div class="gift-card">
+        <img src="/assets/pexels-iamabdullahsheik-10795207.jpg" alt="Birthday Cake">
+        <h3>Delicious Birthday Cakes</h3>
+        <p>Surprise them with a delicious cake for their big day!</p>
+        <button class="add-to-cart" onclick="window.location.href='order.html'">Add to Cart</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="gift-card1">
+        <img src="/assets/pexels-afiqah-ct-774928673-30287486.jpg" alt="Birthday Flowers">
+        <h3>Fresh Birthday Flowers</h3>
+        <p>Brighten their day with a beautiful bouquet of flowers.</p>
+        <button class="add-to-cart" onclick="window.location.href='order.html'">Add to Cart</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="gift-card2">
+        <img src="/assets/pexels-barbara-marques-153698157-10624569.jpg" alt="Birthday Card">
+        <h3>Personalized Birthday Cards</h3>
+        <p>Send a heartfelt message with a custom card just for them.</p>
+        <button class="add-to-cart" onclick="window.location.href='order.html'">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Gift Recommendations Again -->
+  <section class="gift-recommendations reversed">
+    <div class="gift-cards">
+      <!-- Card 1 again -->
+      <div class="gift-card2">
+        <img src="/assets/pexels-barbara-marques-153698157-10624569.jpg" alt="Birthday Card">
+        <h3>Personalized Birthday Cards</h3>
+        <p>Send a heartfelt message with a custom card just for them.</p>
+        <button class="add-to-cart" onclick="window.location.href='order.html'">Add to Cart</button>
+      </div>
+      <!-- Card 2 again -->
+      <div class="gift-card1">
+        <img src="/assets/pexels-afiqah-ct-774928673-30287486.jpg" alt="Birthday Flowers">
+        <h3>Fresh Birthday Flowers</h3>
+        <p>Brighten their day with a beautiful bouquet of flowers.</p>
+        <button class="add-to-cart" onclick="window.location.href='order.html'">Add to Cart</button>
+      </div>
+      <!-- Card 3 again -->
+      <div class="gift-card">
+        <img src="/assets/pexels-iamabdullahsheik-10795207.jpg" alt="Birthday Cake">
+        <h3>Delicious Birthday Cakes</h3>
+        <p>Surprise them with a delicious cake for their big day!</p>
+        <button class="add-to-cart" onclick="window.location.href='order.html'">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  
+      <!-- Personalized Gift Quiz -->
+      <section class="gift-quiz">
+        <h2>Not Sure What to Get? Take Our Personalized Gift Quiz! 🎉</h2>
+        <p>Answer a few simple questions and we'll recommend the perfect birthday gift for your loved one.</p>
+        <button class="quiz-btn">Take the Quiz</button>
+      </section>
+  
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2025 Florist Blossom. All Rights Reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Subscribe for Updates">
+          <button>Subscribe</button>
+        </form>
+    </main>
+    <script src="/js/java.js" type="module"></script>
+  </body>
+  
+</html>

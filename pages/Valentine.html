@@ -1,0 +1,301 @@
+ <!DOCTYPE html>
+ <html lang="en-CA">
+ 
+ <head>
+ 
+   <!--Page Information-->
+   <meta charset="UTF-8">
+   <meta name="description" content="An app to keep a list of all your favourites artist and song names." >
+   <meta name="author" content="Harpreet Kaur">
+ 
+   <!--Locks the size of the page on the devices-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+   <!--Title of the page-->
+   <title>Florist Blossom </title>
+ 
+ 
+   <!--Link the Web App Manifest-->
+ 
+   <link rel="manifest" href="/manifest.json">
+   <link rel="icon" type="image/png" sizes="196x196" href="/icons/favicon-196.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <meta name="msapplication-square70x70logo" content="/icons/mstile-icon-128.png">
+   
+   <meta name="msapplication-square150x150logo" content="/icons/mstile-icon-270.png">
+   <meta name="msapplication-square310x310logo" content="/icons/mstile-icon-558.png">
+   <meta name="msapplication-wide310x150logo" content="/icons/mstile-icon-558-270.png">
+   <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="mobile-web-app-capable" content="yes">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-2732.jpg"
+     media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2732-2048.jpg"
+     media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2388.jpg"
+     media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2388-1668.jpg"
+     media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1536-2048.jpg"
+     media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-1536.jpg"
+     media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1488-2266.jpg"
+     media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2266-1488.jpg"
+     media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1640-2360.jpg"
+     media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2360-1640.jpg"
+     media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2224.jpg"
+     media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2224-1668.jpg"
+     media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1620-2160.jpg"
+     media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2160-1620.jpg"
+     media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1290-2796.jpg"
+     media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2796-1290.jpg"
+     media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1179-2556.jpg"
+     media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2556-1179.jpg"
+     media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1284-2778.jpg"
+     media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2778-1284.jpg"
+     media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1170-2532.jpg"
+     media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2532-1170.jpg"
+     media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1125-2436.jpg"
+     media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2436-1125.jpg"
+     media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2688.jpg"
+     media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2688-1242.jpg"
+     media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-828-1792.jpg"
+     media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1792-828.jpg"
+     media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2208.jpg"
+     media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-2208-1242.jpg"
+     media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-750-1334.jpg"
+     media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1334-750.jpg"
+     media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-640-1136.jpg"
+     media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+   <link rel="apple-touch-startup-image" href="/icons/apple-splash-1136-640.jpg"
+     media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <meta name="apple-mobile-app-title" content="Music app">
+   <meta name="theme-color" content="#1db954" >
+   <link rel="stylesheet" href="/css/valentine.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ </head>
+ 
+ <body>
+   <main>
+    <header>
+        <div class="promo-code">
+          <h2>GET 20% OFF ON FIRST ORDER</h2>
+        </div>
+        <div class="navbar">
+          <!-- Left Section -->
+          <div class="navbar-left">
+            <div class="store-location">
+              <a href="https://www.google.com/maps" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+              </a>
+              <select class="location-dropdown" onchange="redirectToMap(this)">
+                <option value="">Pick Up In Store Location</option>
+                <option value="Birchwood Mall">Birchwood Mall</option>
+                <option value="Downtown Store">Downtown Store</option>
+                <option value="Uptown Center">Uptown Center</option>
+              </select>
+            </div>
+          </div>
+      
+          <!-- Center Section -->
+          <div class="navbar-center">
+            <a href="/index.html" class="website-name">Florist Blossom</a>
+          </div>
+      
+          <!-- Right Section -->
+         <!-- Right Section -->
+  <div class="navbar-right">
+    <div class="search-container">
+      <input type="text" placeholder="Search different flowers..." />
+      <i class="fa-solid fa-magnifying-glass search-icon"></i> <!-- Search icon inside the input -->
+    </div>
+    <div class="icons">
+      <a href="/pages/login.html" class="account-icon">
+        <i class="fa-solid fa-user"></i>
+      </a>
+      <a href="/pages/order.html" class="bag-icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </a>
+    </div>
+  </div>
+  
+          </div>
+        </div>
+      </header>
+
+      <section class="header-section">
+        <h2>Home / Valentine</h2>
+        <h3>You Search for "Valentine"</h3>
+    </section>
+    
+    <div class="filter-container">
+        <select class="filter-dropdown">
+            <option value="">Filter By</option>
+            <option value="Roses">Roses</option>
+            <option value="Tulips">Tulips</option>
+            <option value="Lilies">Lilies</option>
+        </select>
+        <button class="apply-btn">Apply</button>
+    </div>
+    
+    <div class="content-section">
+        <p class="content-description">
+            Find the best flowers and arrangements for your loved ones this Valentine's Day. Select your favorite bouquet or explore different types of flowers.
+        </p>
+    </div>
+    
+    
+    
+    
+    
+    
+      <section class="valentine-images">
+        <div class="valentine-card">
+          <img src="/assets/pexels-adonyi-foto-1765496.jpg" alt="Valentine's Roses">
+          <h4>Valentine's Roses</h4>
+          <p>Classic red roses for your special someone.</p>
+          <p class="price">$29.99</p>
+          <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+        </div>
+        <div class="valentine-card">
+          <img src="/assets/pexels-anete-lusina-5722932.jpg" alt="Heart Bouquet">
+          <h4>Heart Bouquet</h4>
+          <p>A heart-shaped bouquet full of love.</p>
+          <p class="price">$49.99</p>
+          <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+        </div>
+        <div class="valentine-card">
+          <img src="/assets/pexels-afiqah-ct-774928673-30287486.jpg" alt="Pink Lilies">
+          <h4>Pink Lilies</h4>
+          <p>Soft pink lilies for a gentle touch of love.</p>
+          <p class="price">$35.99</p>
+          <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+        </div>
+        <div class="valentine-card">
+          <img src="/assets/pexels-amina-filkins-5414050.jpg" alt="Mixed Flowers">
+          <h4>Mixed Flowers</h4>
+          <p>A colorful bouquet to brighten anyone's day.</p>
+          <p class="price">$39.99</p>
+          <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+        </div>
+        <div class="valentine-card">
+            <img src="/assets/pexels-anna-pou-9451792.jpg" alt="Mixed Flowers">
+            <h4>Mixed Flowers</h4>
+            <p>A colorful bouquet to brighten anyone's day.</p>
+            <p class="price">$39.99</p>
+            <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+          </div>
+          <div class="valentine-card">
+            <img src="/assets/pexels-karolina-grabowska-4195585.jpg" alt="Mixed Flowers">
+            <h4>Mixed Flowers</h4>
+            <p>A colorful bouquet to brighten anyone's day.</p>
+            <p class="price">$39.99</p>
+            <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+          </div>
+          <div class="valentine-card">
+            <img src="/assets/pexels-karolina-grabowska-5713664.jpg" alt="Mixed Flowers">
+            <h4>Mixed Flowers</h4>
+            <p>A colorful bouquet to brighten anyone's day.</p>
+            <p class="price">$39.99</p>
+            <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+          </div>
+          <div class="valentine-card">
+            <img src="/assets/pexels-larissafarber-20308321.jpg" alt="Mixed Flowers">
+            <h4>Mixed Flowers</h4>
+            <p>A colorful bouquet to brighten anyone's day.</p>
+            <p class="price">$39.99</p>
+            <button onclick="window.location.href='/pages/productDescription.html'">Purchase</button>
+          </div>
+      </section>
+    
+      
+      <section class="love-content">
+        <div class="content-container">
+          <!-- Romantic Quote -->
+          <div class="quote">
+            <p>"You know you're in love when you can't fall asleep because reality is finally better than your dreams."</p>
+            <cite>— Dr. Seuss</cite>
+          </div>
+      
+          <!-- Romantic Video -->
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source src="/assets/5874422-uhd_2160_4096_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+          <!-- Romantic Song -->
+          <div class="audio-container">
+            <p>Listen to this romantic tune:</p>
+            <audio controls>
+              <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+      
+          <!-- Interactive Quote Submission -->
+          <div class="interactive">
+            <p>What's your favorite love quote? Share it with us!</p>
+            <form>
+              <input type="text" name="favorite-quote" placeholder="Enter your favorite quote">
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      
+        
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2025 Florist Blossom. All Rights Reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Subscribe for Updates">
+          <button>Subscribe</button>
+        </form>
+      
+      </main>
+      <script src="/js/java.js" type="module"></script>
+      </body>
+      </html>
